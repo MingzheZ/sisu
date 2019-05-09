@@ -1,4 +1,6 @@
 {% load staticfiles %}
+{% load socialaccount %}
+
 <!-- Credited to  Mohan Khadka on CodePen 
 https://codepen.io/khadkamhn/pen/ZGvPLo -->
 <link rel="stylesheet" href="{% static 'css/login.css' %}" />
@@ -58,7 +60,7 @@ https://codepen.io/khadkamhn/pen/ZGvPLo -->
 					</h3>
 				</div>
 				<div class="group">
-					<button>GOOGLE</button>
+					<button><a href="{% provider_login_url 'google' %}">Google</a></button>
 				</div>
 				<div class="group">
 					<button>FACEBOOK</button>

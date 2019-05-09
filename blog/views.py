@@ -200,6 +200,12 @@ def about_sisu(request):
     
 def about_us(request):
     return render(request, 'blog/about_us.html')
+    
+def about_team(request):
+    return render(request, 'blog/about_team.html')    
+
+def about_program(request):
+    return render(request, 'blog/about_program.html')    
 
 def terms_conditions(request):
     return render(request, 'blog/terms_condition.html')

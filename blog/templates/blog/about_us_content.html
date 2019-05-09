@@ -1,24 +1,28 @@
 {% load staticfiles %}
 <div class="about-us container">
-	<div class="about-us-upper-panel">
+    <p></p>
+    <hr class="hr-text" data-content="OVERVIEW">
+    <div class="about-us-upper-panel">
 		<div class="custom-row">
-			<span>
-				<figure class="circle-img">
-                    <img src="{% static 'img/story/about_us_upper.jpg' %}" />
-                	<div class="img-blur"></div>
-				</figure>
-			</span>
 			<span class="left-text">
 				<h1>
-					"Shine (Y)our Light"
+					"Shine |Y|our Light"
 				</h1>
 				<p style="padding-top: 10px">
-					SISU is an organization focused on empowering women in STEM fields who have undergone <b>#MeToo</b> situations in the workplace or academia. 
-                    
+                    In Finnish, SISU means "hope in the face of adversity."  We aim to be a beacon of light as women in STEM undergo <b>#MeToo</b> situations in  academic or professional workspaces.
 				</p>
+                <!--<p>	
+                    SISU is an organization focused on empowering women in STEM fields who have undergone <b>#MeToo</b> situations in the workplace or academia. 
+                </p>-->
                 <p>
                     SISU's novel platform includes cases from real women as well as custom solutions and resources provided by diverse field experts.
                 </p>
+			</span>
+            <span>
+				<figure class="circle-img">
+                    <img src="{% static 'img/story/about_us_lighthouse.jpg' %}" />
+                	<div class="img-blur"></div>
+				</figure>
 			</span>
 		</div>
 		<div class="custom-row">
@@ -53,99 +57,28 @@
                 <p>
 						...and the rest was history.
 				</p>
+                <a href="{% url 'about_team' %}" class="sisu-button">Meet the Team</a>
+            </span>
+		</div>
+        <div class="custom-row" style="margin-bottom: 25px">
+			<span class="left-text">
+				<h1>
+					Empower Now Program
+				</h1>
+				<p style="padding-top: 10px">
+					The <b>Empower Now Program</b> is a partnership between SISU and universities or corporations.  
+				</p>
+                <p>
+                    Its objective is to build customized cases and workshops, as well as interactive exercises and questionnaires, for clients to integrate within their curriculum or enterprise.
+                </p>
+                <a href="{% url 'about_program' %}" class="sisu-button">Learn More</a>
+			</span>
+            <span>
+				<figure class="circle-img">
+                    <img src="{% static 'img/story/about_us_upper.jpg' %}" />
+                	<div class="img-blur"></div>
+				</figure>
 			</span>
 		</div>
-	</div>
-	<div class="about-us-lower-panel">
-		<h1>Our Mission</h1>
-		<div class="about-us-lower-panel-block">
-			<img src="{% static 'img/icon/handshake.svg' %}" alt="">
-			<h4>We are not alone</h4>
-			<p>Harassment, discrimination, politics, and other conflicts in the workplace
-					inspired us to realize that many other women could be facing similar
-					situations in their workplaces.</p>
-		</div>
-		<div class="about-us-lower-panel-block">
-			<img src="{% static 'img/icon/heart.svg' %}" alt="">
-			<h4>We want to listen</h4>
-			<p>Interviewing and collecting cases from women who have undergone
-					unfavorable incidents in academia or industry is our mission.
-					<br> We want to highlight the real, the here, and the now in the hopes of
-					
-					illuminating truth in the darkest places.
-			</p>
-		</div>
-		<div class="about-us-lower-panel-block">
-			<img src="{% static 'img/icon/handshake.svg' %}" alt="">
-			<h4>We want to work with you</h4>
-			<p>By bringing awareness to universities, corporations, and other organizational
-					entities, our “Empower Now” program intends to prevent inappropriate
-					incidents from occuring in the workplace. 
-                    <br> Inspiring empathy in every user is
-					key to preparing them to respond aptly to on-the-field situations.
-			</p>
-		</div>
-		<div class="about-us-lower-panel-block">
-			<img src="{% static 'img/icon/comments.svg' %}" alt="">
-			<h4>We want to speak up</h4>
-			<p>Our published cases aim to empower women, particularly those in STEM fields, to
-					speak up--whether it be to their perpetrator, manager, organizational authority, or
-					themselves. 
-                    <br> We want to help women embrace their emotions, discern the best
-					path forward, and, ultimately, heal from their incidents.
-			</p>
-		</div>
-		<div class="about-us-lower-panel-block">
-			<img src="{% static 'img/icon/chart-bar.svg' %}" alt="">
-			<h4>We want you to stick with it</h4>
-			<p>More than 200 women in top, tech firm positions reported sexist work interactions,
-					with one in three women having felt afraid for their safety [1]. Additionally, nearly 40% who earn engineering degrees either quit or never enter the profession [2].
-					<br> Thus, our mission is simple: to help women joyfully pursue their STEM dreams without
-					feeling uncomfortable, inhibited, or dissuaded in any way because of uncalled for
-					people-play.
-			</p>
-		</div>
-	</div>
-	
+	</div>	
 </div>
-<div class="about-us-footer">
-    <h1>We are SISU</h1>
-	<div class="custom-row">
-        <div class="about-us-footer-profile">
-            <img src="{% static 'img/icon/female_user_1.png' %}" alt="">
-			<h4>Jo</h4>
-			<h6>Co-founder</h6>
-			<p>
-				A fun-loving engineer and social justice advocate. 
-                <br>Loves to solve intricate challenges and travel the world!
-			</p>
-		</div>
-		<div class="about-us-footer-profile">
-			<img src="{% static 'img/icon/female_user_2.png' %}" alt="">
-			<h4>Xiao</h4>
-			<h6>Co-founder / Lead Backend Developer </h6>
-			<p>
-				A passionate full-stack software engineer who loves to solve tough problems.
-                <br>Strong advocate of women leadership, diversity and inclusion in the workplace.
-			</p>
-		</div>
-		<div class="about-us-footer-profile">
-			<img src="{% static 'img/icon/male_user_1.png' %}" alt="">
-			<h4>Shane</h4>
-			<h6>Lead Frontend Developer</h6>
-			<p>
-				Full-stack engineer, passionate in developing user friendly application
-			</p>
-		</div>
-		<div class="about-us-footer-profile">
-			<img src="{% static 'img/icon/female_user_3.png' %}" alt="">
-			<h4>Julie</h4>
-			<h6>UX Designer</h6>
-			<p>
-				Mild-mannered professional by day, renegade artist by night. 
-                <br>Lover of creative expression through UI design.
-			</p>
-		</div>
-	</div>
-</div>
-

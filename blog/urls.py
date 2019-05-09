@@ -5,6 +5,8 @@ from .views import IndexView
 urlpatterns = [
     url(r'^$', views.about_sisu, name='about'),
     url(r'^about_us$', views.about_us, name='about_us'),
+    url(r'^about_us/team$', views.about_team, name='about_team'),
+    url(r'^about_us/empower_now$', views.about_program, name='about_program'),
     url(r'^post/$', views.post_list, name='post_list'),
     url(r'^post/new/$', views.post_new, name='post_new'),
     url(r'^drafts/$', views.post_draft_list, name='post_draft_list'),

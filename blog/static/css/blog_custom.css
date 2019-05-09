@@ -802,6 +802,14 @@ label {
   color: #007bb5;
 }
 
+#social_icon_footer #icon-gift:hover {
+  color: #FF6347;
+}
+
+#social_icon_footer #icon-email:hover {
+  color: #5D1049;
+}
+
 .footer-row {
     width:100%;
     margin : 0;
@@ -827,4 +835,78 @@ label {
    float : left ;
    padding-left: 30%;
    padding-top: 5px;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: #5D1049;
+  text-align: center;
+  height: 1.5em;
+  opacity: .75;
+  margin-bottom: 1.5em;
+}
+.hr-text:before {
+  content: '';
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: #5D1049;
+  padding: 0 .5em;
+  line-height: 1.5em;
+  color: #818078;
+  background-color: #fcfcfa;
+}
+
+.empower-section {
+  margin: 30px 0;
+}
+
+.program-card {
+  margin: 30px 0;
+}
+
+.program-card > div{
+    margin: 0 auto 40px;
+    justify-content: space-between;
+    max-width: 90%;
+}
+
+.program-col {
+  width:100%;
+  height: 450px;
+  padding: 50px 25px;
+  text-align: center;
+  background-size: 100%;
+  border-style: groove;
+  margin: 25px;
+}
+
+.program-col .col-icon-wrapper {
+  min-height: 80px;
+}
+.program-col .col-title {
+  color: #D28D00;
+  font-weight: bold;
+  line-height: 1.5em;
+  font-size:18px;
+}
+.program-col .col-details {
+  text-align: center;
+  margin-bottom: 25px;
+  min-height: 80px;
+  line-height: 1.5em;
+  font-weight: lighter;
+  color:black;
+  font-size: 14px;
 }
